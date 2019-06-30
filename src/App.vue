@@ -2,8 +2,9 @@
   <div id="app">
     <b-container>
       <b-row>
-        <b-col>
-          <div v-if="step == 1">
+        <b-col>					
+					<br>
+          <div v-if="step == 1" style="width: 30%">
             <h2>Paso 1</h2>
             <p>Ingresa los datos de tu empresa</p>
             <b-form>
@@ -36,16 +37,15 @@
                 >
                 </b-form-input>
               </b-form-group>
-
               <b-button
-                variant="primary"
+                variant="yape"
                 @click="step = 2"
               >
                 Siguiente
               </b-button>
             </b-form>
           </div>
-          <div v-if="step == 2">
+          <div v-if="step == 2" style="width: 60%">
             <h2>Paso 2</h2>
             <p>Inserta el siguiente código en tu E-Commerce</p>
             <CodeToInsert
@@ -80,4 +80,13 @@ export default {
 </script>
 
 <style>
+h2 {
+	color: purple;
+	font-weight: bold;
+}
+
+.btn-yape {
+	background-color: rgb(1, 196, 164);
+	color: white;
+}
 </style>

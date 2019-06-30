@@ -81,6 +81,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h4 {
+	color: purple;
+}
+
 .copy-text {
   float: right;
   color: royalblue;
