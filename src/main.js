@@ -4,6 +4,8 @@ import App from './App.vue'
 
 import 'prismjs'
 import 'prismjs/themes/prism.css'
+import 'prismjs/components/prism-json'
+import 'prismjs/components/prism-python'
 import Clipboard from 'v-clipboard'
 
 Vue.config.productionTip = false
